@@ -245,7 +245,7 @@ uv run python -m streaming.consumer_case
 
 </details>
 
-## Notes
+## Note
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
