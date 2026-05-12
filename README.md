@@ -1,5 +1,7 @@
 # streaming-01-foundations
 
+Alissa Beaderstadt - Graduate Student - Data Analytics
+
 [![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](./pyproject.toml)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
@@ -110,8 +112,7 @@ After you get a copy of this repo in your own GitHub account,
 open a machine terminal in your `Repos` folder:
 
 ```shell
-# Replace username with YOUR GitHub username.
-git clone https://github.com/username/streaming-01-foundations
+git clone https://github.com/beaderstadta/streaming-01-foundations
 
 cd streaming-01-foundations
 code .
@@ -252,6 +253,22 @@ uv run python -m streaming.consumer_case
 - You do not need to add to or modify `tests/`. They are provided for example only.
 - Many files are silent helpers. Explore as you like, but nothing is required.
 - You do NOT not to understand everything; understanding builds naturally over time.
+
+## My Project Modifications
+
+To make this project my own, I #TODO
+
+### Phase 4: Make a Technical Modification
+
+1. #TODO
+2. Observations:
+      - #TODO
+
+### Phase 5: Apply the Skills to a New Problem
+
+1. #TODO
+2. Observations:
+     - #TODO
 
 ## Troubleshooting >>>
 
