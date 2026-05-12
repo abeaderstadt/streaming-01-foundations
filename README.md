@@ -211,8 +211,11 @@ uvx pre-commit run --all-files
 git add -A
 uvx pre-commit run --all-files
 
-# run the producer (produces messages)
+# run the example producer (produces messages)
 uv run python -m streaming.producer_case
+
+# run the customized producer (produces messages)
+uv run python -m streaming.producer_beaderstadt
 
 # do chores
 uv run ruff format .
@@ -241,7 +244,12 @@ Verify Kafka is reachable, then start the consumer.
 
 ```shell
 clear
+# run the example consumer
 uv run python -m streaming.consumer_case
+
+clear
+# run the customized consumer
+uv run python -m streaming.consumer_beaderstadt
 ```
 
 </details>
