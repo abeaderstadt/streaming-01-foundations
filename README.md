@@ -264,12 +264,6 @@ To make this project my own, I #TODO
 2. Observations:
       - #TODO
 
-### Phase 5: Apply the Skills to a New Problem
-
-1. #TODO
-2. Observations:
-     - #TODO
-
 ## Troubleshooting >>>
 
 If you see something like this in your terminal: `>>>` or `...`
