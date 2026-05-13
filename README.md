@@ -264,16 +264,27 @@ uv run python -m streaming.consumer_beaderstadt
 
 ## My Project Modifications
 
-To make this project my own, I #TODO
+To make this project my own, I added a small change in the consumer and tagged
+each message so I could better understand how streaming data gets enriched during processing.
 
 ### Phase 4: Make a Technical Modification
 
-1. # Created a new derived field called total_price in the consumer
+1. Created a new derived field in the consumer called 'total_price'
+   - 'total_price = quantity × unit_price'
+2. Added a processing tag to each message
+   - 'processed_by = beaderstadt_consumer'
+3. These changes helped me better understand how the consumer transforms raw data
+   into more useful output before writing it to the final CSV file.
 
-2. total_price = quantity × unit_price
-3. Observations:
-
-   - # My custom consumed_sales_beaderstadt.csv file now shows a new collumn called total_price
+4. Observations:
+   1. My custom output file 'consumed_sales_beaderstadt.csv' now includes a new column:
+     - 'total_price'
+   1. The file also includes a new column:
+     - 'processed_by'
+     - Each row confirms it was processed by my custom consumer (beaderstadt_consumer)
+   1. This shows the difference between:
+     - raw streaming data (producer output)
+     - transformed analytical data (consumer output)
 
 ## Troubleshooting >>>
 
