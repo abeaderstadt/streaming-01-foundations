@@ -269,22 +269,23 @@ each message so I could better understand how streaming data gets enriched durin
 
 ### Phase 4: Make a Technical Modification
 
-1. Created a new derived field in the consumer called 'total_price'
-   - 'total_price = quantity × unit_price'
+1. Created a new derived field in the consumer called total_price
+   - total_price = quantity × unit_price
 2. Added a processing tag to each message
-   - 'processed_by = beaderstadt_consumer'
+   - processed_by = beaderstadt_consumer
 3. These changes helped me better understand how the consumer transforms raw data
    into more useful output before writing it to the final CSV file.
 
-4. Observations:
-   1. My custom output file 'consumed_sales_beaderstadt.csv' now includes a new column:
-     - 'total_price'
-   1. The file also includes a new column:
-     - 'processed_by'
-     - Each row confirms it was processed by my custom consumer (beaderstadt_consumer)
-   1. This shows the difference between:
-     - raw streaming data (producer output)
-     - transformed analytical data (consumer output)
+### Observations
+
+1. My custom output file consumed_sales_beaderstadt.csv now includes a new column:
+   - total_price
+2. The file also includes a new column:
+   - processed_by
+   - Each row confirms it was processed by my custom consumer (beaderstadt_consumer)
+3. This shows the difference between:
+   - raw streaming data (producer output)
+   - transformed analytical data (consumer output)
 
 ## Troubleshooting >>>
 
