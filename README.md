@@ -268,9 +268,12 @@ To make this project my own, I #TODO
 
 ### Phase 4: Make a Technical Modification
 
-1. #TODO
-2. Observations:
-      - #TODO
+1. # Created a new derived field called total_price in the consumer
+
+2. total_price = quantity × unit_price
+3. Observations:
+
+   - # My custom consumed_sales_beaderstadt.csv file now shows a new collumn called total_price
 
 ## Troubleshooting >>>
 

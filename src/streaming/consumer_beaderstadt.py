@@ -157,6 +157,15 @@ def process_message(row: dict[str, Any]) -> dict[str, Any]:
         The same row.
     """
     LOG.info("Processing raw local message.")
+
+    # --- derived field (total_price) ---
+    quantity = float(row["quantity"])
+    unit_price = float(row["unit_price"])
+    row["total_price"] = quantity * unit_price
+
+    # tagging
+    row["processed_by"] = "beaderstadt_consumer"
+
     return row
 
 
